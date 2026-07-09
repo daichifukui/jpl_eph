@@ -9,6 +9,7 @@ jobs:
     - uses: actions/checkout@master
     - name: make
       run: |
+        cd ~
         git clone https://github.com/Bill-Gray/lunar
         cd lunar
         make
@@ -22,6 +23,7 @@ jobs:
     - uses: actions/checkout@master
     - name: make
       run: |
+        cd ~
         git clone https://github.com/Bill-Gray/lunar
         cd lunar
         make CLANG=Y

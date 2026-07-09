@@ -34,12 +34,12 @@ ifdef UCHAR
 	CFLAGS += -funsigned-char
 endif
 
-# You can have your include files in ../include and libraries in
-# ../lib,  in which case only the current user can use them;  or
+# You can have your include files in ~/include and libraries in
+# ~/lib,  in which case only the current user can use them;  or
 # (with root privileges) you can install them to /usr/local/include
 # and /usr/local/lib for all to enjoy.
 
-PREFIX?=..
+PREFIX?=~
 ifdef GLOBAL
 	INSTALL_DIR=/usr/local
 else
