@@ -88,6 +88,7 @@ int main( const int argc, const char **argv)
 #endif
 
    assert( argc >= 4);
+   INTENTIONALLY_UNUSED_PARAMETER( argc);  /* unused in debug builds */
    printf( "Year approx %.3f\n", 2000. + (jd - 2451545.) / 365.25);
    p = jpl_init_ephemeris( filename, NULL, NULL);
    if( !p)
