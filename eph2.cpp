@@ -56,7 +56,7 @@ static void format_base_sixty( char *buff, double ang)
       if( ival >= maxval[i])
          ival = maxval[i] - 1L;
       assert( ival >= 0L && ival < 1000000000L);
-      snprintf( buff, 11, (i == 3 ? ".%09ld" : "%02ld "), ival);
+      snprintf( buff, 25, (i == 3 ? ".%09ld" : "%02ld "), ival);
       buff += (i == 2 ? 2 : 3);
       ang = (ang - (double)ival) * (double)maxval[i + 1];
       }
